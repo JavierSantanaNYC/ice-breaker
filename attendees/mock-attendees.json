@@ -1,0 +1,240 @@
+[
+  {
+    "full_name": "John Doe",
+    "email": "jdoe@icebreaker.com",
+    "phone": "555-555-5555",
+    "job_title": "boss",
+    "company": "Icebreaker",
+    "interests": [
+      "Artificial Intelligence",
+      "Internet of Things",
+      "Cybersecurity",
+      "Virtual Reality / Augmented Reality",
+      "Big Data & Analytics",
+      "Blockchain",
+      "Robotics",
+      "Web Development",
+      "Mobile App Development"
+    ],
+    "events": [
+      {
+        "event_name": "NYC AI Hackathon",
+        "goals": [
+          "Networking with peers",
+          "Learning about new technologies",
+          "Attending workshops and hands-on sessions",
+          "Discovering potential business partners",
+          "Presenting or exhibiting my company's products/services"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "Emma Johnson",
+    "email": "emma.johnson@example.com",
+    "phone": "555-123-4567",
+    "job_title": "Data Scientist",
+    "company": "DataWizards",
+    "interests": [
+      "Artificial Intelligence",
+      "Big Data & Analytics",
+      "Machine Learning"
+    ],
+    "events": [
+      {
+        "event_name": "Tech Innovators Conference 2023",
+        "goals": [
+          "Networking with peers",
+          "Learning about new technologies",
+          "Attending workshops and hands-on sessions"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "Olivia Martin",
+    "email": "olivia.martin@smartech.io",
+    "phone": "555-234-5678",
+    "job_title": "Software Engineer",
+    "company": "Smartech",
+    "interests": [
+      "Web Development",
+      "Mobile App Development",
+      "Internet of Things"
+    ],
+    "events": [
+      {
+        "event_name": "Tech Innovators Conference 2023",
+        "goals": [
+          "Networking with peers",
+          "Discovering potential business partners",
+          "Learning about new technologies"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "Sophia Brown",
+    "email": "sophia.brown@cybersecpros.com",
+    "phone": "555-345-6789",
+    "job_title": "Cybersecurity Analyst",
+    "company": "CyberSecPros",
+    "interests": ["Cybersecurity", "Artificial Intelligence", "Blockchain"],
+    "events": [
+      {
+        "event_name": "Tech Innovators Conference 2023",
+        "goals": [
+          "Networking with peers",
+          "Attending workshops and hands-on sessions",
+          "Learning about new technologies"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "Ava Williams",
+    "email": "ava.williams@roboticinnovations.net",
+    "phone": "555-456-7890",
+    "job_title": "Robotics Engineer",
+    "company": "Robotic Innovations",
+    "interests": ["Robotics", "Artificial Intelligence", "Internet of Things"],
+    "events": [
+      {
+        "event_name": "Tech Innovators Conference 2023",
+        "goals": [
+          "Networking with peers",
+          "Discovering potential business partners",
+          "Presenting or exhibiting my company's products/services"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "Isabella Davis",
+    "email": "isabella.davis@virtualworlds.com",
+    "phone": "555-567-8901",
+    "job_title": "VR/AR Developer",
+    "company": "Virtual Worlds",
+    "interests": [
+      "Virtual Reality / Augmented Reality",
+      "Web Development",
+      "Mobile App Development"
+    ],
+    "events": [
+      {
+        "event_name": "Tech Innovators Conference 2023",
+        "goals": [
+          "Networking with peers",
+          "Attending workshops and hands-on sessions",
+          "Learning about new technologies"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "Mia Wilson",
+    "email": "mia.wilson@iotconnect.org",
+    "phone": "555-678-9012",
+    "job_title": "IoT Solutions Architect",
+    "company": "IoT Connect",
+    "interests": [
+      "Internet of Things",
+      "Artificial Intelligence",
+      "Big Data & Analytics"
+    ],
+    "events": [
+      {
+        "event_name": "Tech Innovators Conference 2023",
+        "goals": [
+          "Networking with peers",
+          "Learning about new technologies",
+          "Discovering potential business partners"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "Charlotte Thompson",
+    "email": "charlotte.thompson@blockchainpioneers.com",
+    "phone": "555-789-0123",
+    "job_title": "Blockchain Developer",
+    "company": "Blockchain Pioneers",
+    "interests": ["Blockchain", "Cybersecurity", "Web Development"],
+    "events": [
+      {
+        "event_name": "Tech Innovators Conference 2023",
+        "goals": [
+          "Networking with peers",
+          "Attending workshops and hands-on sessions",
+          "Learning about new technologies"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "Amelia Taylor",
+    "email": "amelia.taylor@datadrivenanalytics.co",
+    "phone": "555-890-1234",
+    "job_title": "Data Analyst",
+    "company": "Data Driven Analytics",
+    "interests": [
+      "Big Data & Analytics",
+      "Artificial Intelligence",
+      "Machine Learning"
+    ],
+    "events": [
+      {
+        "event_name": "Tech Innovators Conference 2023",
+        "goals": [
+          "Networking with peers",
+          "Learning about new technologies",
+          "Discovering potential business partners"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "Harper Harris",
+    "email": "harper.harris@appdevsolutions.com",
+    "phone": "555-901-2345",
+    "job_title": "Mobile App Developer",
+    "company": "App Dev Solutions",
+    "interests": [
+      "Mobile App Development",
+      "Web Development",
+      "Internet of Things"
+    ],
+    "events": [
+      {
+        "event_name": "Tech Innovators Conference 2023",
+        "goals": [
+          "Networking with peers",
+          "Attending workshops and hands-on sessions",
+          "Presenting or exhibiting my company's products/services"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "Ella Lewis",
+    "email": "ella.lewis@webprobuilders.com",
+    "phone": "555-012-3456",
+    "job_title": "Front-end Developer",
+    "company": "Web Pro Builders",
+    "interests": [
+      "Web Development",
+      "Mobile App Development",
+      "Virtual Reality / Augmented Reality"
+    ],
+    "events": [
+      {
+        "event_name": "Tech Innovators Conference 2023",
+        "goals": [
+          "Networking with peers",
+          "Learning about new technologies",
+          "Attending workshops and hands-on sessions"
+        ]
+      }
+    ]
+  }
+]

@@ -11,6 +11,7 @@ backoff = "*"
 transformers = "*"
 xmltodict = "*"
 bs4 = "*"
+pymongo = "*"
 
 [dev-packages]
 ipykernel = "*"
