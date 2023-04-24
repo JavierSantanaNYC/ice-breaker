@@ -4,9 +4,14 @@ import QuestionsPage from "./questions";
 
 const AttendeesPage = () => {
   const [comparing, setComparing] = React.useState(false);
-    const [checkboxes, setCheckboxes] = React.useState(
+  const [checkboxes, setCheckboxes] = React.useState(
     attendees.map((attendee) => {
-      return { id: attendee.id, checked: false, label: attendee.full_name, category: attendee.category };
+      return {
+        id: attendee.id,
+        checked: false,
+        label: attendee.full_name,
+        category: attendee.category,
+      };
     })
   );
   const categories = attendees.reduce((acc, attendee) => {
@@ -19,7 +24,6 @@ const AttendeesPage = () => {
   const handleCheckboxChange = React.useCallback((id) => {
     setCheckboxes((prevState) => {
       const newState = prevState.map((checkbox) => {
-        console.log(checkbox.id, id)
         if (checkbox.id === id) {
           // If the current checkbox is already checked, toggle it
           if (checkbox.checked) {
@@ -31,7 +35,7 @@ const AttendeesPage = () => {
 
           // If the limit of two checked checkboxes is not reached, toggle the current checkbox
           if (checkedCount < 2) {
-            return{ ...checkbox, checked: !checkbox.checked };
+            return { ...checkbox, checked: !checkbox.checked };
           }
         }
         return checkbox;
@@ -43,37 +47,41 @@ const AttendeesPage = () => {
 
   const compare = () => {
     const selectedAttendees = checkboxes.filter((cb) => cb.checked);
-    return <QuestionsPage attendees={selectedAttendees} />;
-    };
+    const selected = [selectedAttendees[0].label, selectedAttendees[1].label];
+    return <QuestionsPage attendees={selected} />;
+  };
 
   return (
     <>
       {checkboxes.filter((cb) => cb.checked).length === 2 ? (
-        <button>Compare</button>
+        <button onClick={() => setComparing(!comparing)}>{comparing ? "Select Attendees" : "Compare"}</button>
       ) : (
         <p>select two attendees to view interaction question.</p>
       )}
-      {!comparing ? categories.map((category) => (
-        <div>
-          <h1>{category}</h1>
+      {!comparing
+        ? categories.map((category) => (
+            <div>
+              <h1>{category}</h1>
 
-          {checkboxes.map((checkbox) => (
-            checkbox.category === category && (
-            <div key={checkbox.id}>
-              <input
-                type="checkbox"
-                id={`checkbox-${checkbox.id}`}
-                checked={checkbox.checked}
-                onChange={() => handleCheckboxChange(checkbox.id)}
-              />
-              <label htmlFor={`checkbox-${checkbox.id}`}>
-                {checkbox.label}
-              </label>
+              {checkboxes.map(
+                (checkbox) =>
+                  checkbox.category === category && (
+                    <div key={checkbox.id}>
+                      <input
+                        type="checkbox"
+                        id={`checkbox-${checkbox.id}`}
+                        checked={checkbox.checked}
+                        onChange={() => handleCheckboxChange(checkbox.id)}
+                      />
+                      <label htmlFor={`checkbox-${checkbox.id}`}>
+                        {checkbox.label}
+                      </label>
+                    </div>
+                  )
+              )}
             </div>
-            )
-          ))}
-        </div>
-      )) : compare()}
+          ))
+        : compare()}
     </>
   );
 };

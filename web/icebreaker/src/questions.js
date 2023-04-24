@@ -1,17 +1,21 @@
 import React from "react";
 import questions from "./questions.json";
 
-const QuestionsPage = (attendees) => {
+const QuestionsPage = (props) => {
   const matchingQuestions = questions.filter(
     (question) =>
-      attendees[0] in question.attendees && attendees[1] in question.attendees
+      question.attendees.includes(props.attendees[0]) &&
+      question.attendees.includes(props.attendees[1])
   );
 
   return (
     <>
       {matchingQuestions.map((question) => (
         <div>
-          <h4>{question.question}</h4>
+          {question.questions.split('\n').map((item, key) => {
+            return <span key={key}>{item}<br/></span>
+          }
+            )}
         </div>
       ))}
     </>
