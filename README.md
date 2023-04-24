@@ -3,8 +3,17 @@ AI-powered networking tool to facilitate engaging discussions at in-person and r
 
 ## Installation
 ```cd ./ice-breaker```
+
 ```pip install pipenv```
+
 ```pipenv install```
+
+## start web server
+```cd ./ice-breaker/web/icebreaker```
+
+``` npm install ```
+
+``` npm start ```
 
 ## Event Details
 # Title: Tech Innovators Conference 2023
