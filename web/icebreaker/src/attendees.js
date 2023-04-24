@@ -1,9 +1,10 @@
 import attendees from "./attendee-categories.json";
 import React from "react";
+import QuestionsPage from "./questions";
 
 const AttendeesPage = () => {
-  const [selected, setSelected] = React.useState([]);
-  const [checkboxes, setCheckboxes] = React.useState(
+  const [comparing, setComparing] = React.useState(false);
+    const [checkboxes, setCheckboxes] = React.useState(
     attendees.map((attendee) => {
       return { id: attendee.id, checked: false, label: attendee.full_name, category: attendee.category };
     })
@@ -40,6 +41,11 @@ const AttendeesPage = () => {
     });
   }, []);
 
+  const compare = () => {
+    const selectedAttendees = checkboxes.filter((cb) => cb.checked);
+    return <QuestionsPage attendees={selectedAttendees} />;
+    };
+
   return (
     <>
       {checkboxes.filter((cb) => cb.checked).length === 2 ? (
@@ -47,7 +53,7 @@ const AttendeesPage = () => {
       ) : (
         <p>select two attendees to view interaction question.</p>
       )}
-      {categories.map((category) => (
+      {!comparing ? categories.map((category) => (
         <div>
           <h1>{category}</h1>
 
@@ -67,7 +73,7 @@ const AttendeesPage = () => {
             )
           ))}
         </div>
-      ))}
+      )) : compare()}
     </>
   );
 };
