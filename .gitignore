@@ -2,4 +2,5 @@
 .env
 event_platforms/data/*
 web/icebreaker/node_modules/*
-event_platforms/nyc.csv
+*.csv
+
