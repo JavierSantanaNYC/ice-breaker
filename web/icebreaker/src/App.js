@@ -1,6 +1,6 @@
 import "./App.css";
-
-import attendees from "./attendee-categories.json";
+import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
+import AttendeesPage from "./attendees";
 import event from "./event.json";
 
 const EventsPage = () => {
@@ -18,9 +18,31 @@ const EventsPage = () => {
 };
 
 function App() {
-  return <div className="App">
-    <EventsPage/>    
-  </div>;
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <div>
+          {/* Navigation */}
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Main Event</Link>
+              </li>
+              <li>
+                <Link to="/attendees">Attendees</Link>
+              </li>
+            </ul>
+          </nav>
+
+          {/* Routes */}
+          <Routes>
+            <Route path="/" element={<EventsPage />} />
+            <Route path="/attendees" element={<AttendeesPage />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
