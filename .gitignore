@@ -1,2 +1,4 @@
 
 .env
+event_platforms/data/*
+*.csv
