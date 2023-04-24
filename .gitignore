@@ -2,3 +2,4 @@
 .env
 event_platforms/data/*
 *.csv
+web/icebreaker/node_modules/*
